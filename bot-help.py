@@ -5,7 +5,8 @@ from discord.ext import commands
 
 import settings
 from settings import Help
-class HelpCog:
+
+class HelpCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -35,7 +36,7 @@ class HelpCog:
             cmdlist = ""
             #print(c)
             #print(self.bot.get_cog_commands(c))
-            for thing in self.bot.get_cog_commands(c): #for things in each cog
+            for thing in self.bot.get_cog(c).get_commands(): #for things in each cog
 
                 if isinstance(thing, commands.Group):
                     if thing.description: #if it has a global command

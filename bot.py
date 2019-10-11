@@ -27,8 +27,9 @@ if __name__ == "__main__":
 
 @bot.event
 async def on_ready():
+    print(bot.user.name)
     print(f"\nLogged in as: {bot.user.name} - {bot.user.id}\ndiscord.py version: {discord.__version__}\n")
     await bot.change_presence(activity = discord.Game(name="with the matrix"))
     print("Successfully logged in and booted...!")
 
-bot.run("NDIwOTcwODIzMTQzMTI5MDg4.Dbe9Mw.iz2s7CiTak6bxhHtOoCMg33mgVI", bot=True, reconnect=True)
+bot.run("NjE3MjQwNTMxNjQ2NDE0ODQ4.XZ6-RA.25BAY_eiS1fNInIwTDaxiC_JIBw", bot=True, reconnect=True)

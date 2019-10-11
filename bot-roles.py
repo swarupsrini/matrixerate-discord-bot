@@ -6,7 +6,7 @@ from discord.ext import commands
 import settings
 from settings import Roles
 
-class RolesCog:
+class RolesCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

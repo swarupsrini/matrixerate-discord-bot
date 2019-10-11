@@ -6,7 +6,7 @@ from discord.ext import commands
 import settings
 from settings import Money
 
-class MoneyCog:
+class MoneyCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
