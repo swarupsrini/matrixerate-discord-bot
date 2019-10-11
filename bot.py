@@ -32,4 +32,4 @@ async def on_ready():
     await bot.change_presence(activity = discord.Game(name="with the matrix"))
     print("Successfully logged in and booted...!")
 
-bot.run("NjE3MjQwNTMxNjQ2NDE0ODQ4.XZ6-RA.25BAY_eiS1fNInIwTDaxiC_JIBw", bot=True, reconnect=True)
+bot.run("", bot=True, reconnect=True)
