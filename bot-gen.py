@@ -17,7 +17,7 @@ class GeneralCog(commands.Cog):
     @commands.command(aliases = ["cc"], description = "Changes the bot's input/output channel. If arg1 is \"None\", all channels are set for input/output.")
     @commands.has_permissions(administrator = True)
     async def changechannel(self, ctx, none : str = ""):
-        if none.lower() == "None":
+        if none.lower() == "none":
             settings.channel == None
             await ctx.channel.send(f"**{ctx.author.name}**, changed the command channel to None")
         else:
